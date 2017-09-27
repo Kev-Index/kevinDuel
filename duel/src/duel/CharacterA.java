@@ -15,12 +15,12 @@ public class CharacterA extends Duel implements Dueler
 	}
 	public String getName()
 	{
-		name = "Chaddd";
+		this.name = "Chaddd";
 		return name;
 	}
 	public void setStartingHP(int hp)
 	{
-		hp = 
+		this.hp = hp;
 	}
 	public int getHP()
 	{
@@ -78,7 +78,7 @@ public class CharacterA extends Duel implements Dueler
 	{
 		if (caller instanceof Duel)
 		{
-			hp = hp - 10;
+			hp =- 10;
 		}
 	}
 }
