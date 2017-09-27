@@ -42,9 +42,9 @@ public class Duel {
 		System.out.println(d2.getName());
 		pause(600);
 		d1.taunt();
-		pause(2000);
+		pause(600);
 		d2.taunt();
-		pause(2000);
+		pause(600);
 		d1.setStartingHP(dueler1HP);
 		d2.setStartingHP(dueler2HP);
 		

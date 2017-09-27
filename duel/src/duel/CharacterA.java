@@ -1,12 +1,15 @@
 package duel;
 
-import duel.Duel;
 
-public class CharacterA extends Duel implements Dueler 
+public class CharacterA implements Dueler 
 {
 	private String name;
 	private int hp;
 	private boolean loadedGun = false;
+	
+	public CharacterA() {
+		
+	}
 	
 	public void taunt() 
 	{
@@ -68,14 +71,14 @@ public class CharacterA extends Duel implements Dueler
 		}
 		else
 		{
-			return YEAH_RIGHT;
+			return Duel.YEAH_RIGHT;
 		}
 	}
 	public void hit(Object caller)
 	{
 		if (caller instanceof Duel)
 		{
-			hp =- 10;
+			hp = hp - 10;
 		}
 	}
 }
