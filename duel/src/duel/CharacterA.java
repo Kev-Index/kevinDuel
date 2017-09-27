@@ -45,15 +45,12 @@ public class CharacterA extends Duel implements Dueler
 			{
 				if (Math.random() > 0.4)
 				{
-					return Duel.SHOOTING;
 					loadedGun = false;
+					return Duel.SHOOTING;
 				}
 				else
 				{
-					if (Math.random() < 0.5)
-					{
 						return Duel.GUARDING;
-					}
 				}
 			}
 			else
@@ -64,8 +61,8 @@ public class CharacterA extends Duel implements Dueler
 				}
 				else
 				{
-					return Duel.LOADING;
 					loadedGun = true;
+					return Duel.LOADING;
 				}
 			}
 		}
